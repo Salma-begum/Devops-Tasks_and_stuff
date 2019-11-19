@@ -1,0 +1,40 @@
+Life Point U.s
+==============
+Lifepoint comes under healthcare domain.
+
+They have a very vast business in america.
+lifepoint client deals in all medical sectors in the america.
+
+they have there insurance policies which is covered by more than 50 % of population in america.
+
+we work for that client for the deployment of the applciation,we make sure that the application is always up and running.
+
+whenever there will be a new release in the application,we will be taking a window for deployment from client that depends upon SLA(service level agreement)
+made at the time of contract.
+
+we support there application to be hosted in tomcat severs in aws cloud.
+
+we make sure there are no problems facing by end user to access the application.
+As a devops engineer my role is to deploy the application.
+whenever there will be changes in code that changes will be pushed to github by developers.
+when all the code is developed then it will be merged to master branch and from github it will be triggered to jenkins,we configure webhooks in git for
+automatic triggering of code to jenkins.
+
+once code is triggered to jenkins and the commited code is verified by some test cases in jenkins.
+once this is done then we will build the jenkins job so that the code will be build and the war/jar file created will be pushed to nexus artifactory repository.
+
+once this is done then with the help of ansible play book this war/jar file will be pulled from nexus and deployed in tomcat in aws cloud servers.
+
+we will be maintainign jenkins pipelines,and a total of around aws 20 servers (t2.medium vcpu 2 cpu credits 24 memory 4 gb).
+
+all these servers are in autoscaling group which will be from min 20 - max 30 servers,so that whenever there will be high traffic then servers will scale up and down.
+
+i will be working on git like pushing the code to github.
+creating the branches if neccessary for developers.
+reverting the code if any changes made by developers where not deployed successfull.
+
+in jenkins managing the plugins,maintainign jenkins pipeline,maintainign jenkins job,runnign the jenkins job.
+
+In aws :creation of ec2 instances for developers as per need,maintainign s3 buckets,ebs volumes,taking backup of volumes,snapshots of instances,vpc,cidr blocks.
+
+have idea on cloudfont,loadbalancing,ssl and many other services in aws.

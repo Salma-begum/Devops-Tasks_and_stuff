@@ -1,0 +1,21 @@
+Git-Github Task:
+1)Install git.
+2)Create a repo in github with README.md and .ignore file.
+3)Clone the created repo to local.
+4)Create two files in local repo.
+5)Commit two files and push to central Repository.
+6)Create a branch in local and create a sample file and push to central.
+7)Create a branch in github and clone that to local.
+8)Merge the created branch with master in git local.
+9)Merge the created branch with master in github by sending a pull request.
+10)create a file in local and send that to branch in github.
+11)clone only a branch from github to local.
+12)create a file with all passwords and make that untrackable with git.
+13)make a commit and make that commit reset without savings changes.
+14)Revert a commited commit to the older version.
+15)push a file to stack without savings the changes and work on another file.
+16)undo the stack file and start working on that again.
+17)generate a ssh-keygen and configure into github.
+18)configure webhooks to github.
+19)basic understanding of .git file.
+20)Check all the logs of git.

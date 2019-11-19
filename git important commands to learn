@@ -1,0 +1,23 @@
+git init
+git config
+git add
+git status
+git push
+git pull
+git commit
+git fetch
+git merge
+git branch
+git clone
+git stash
+git pop
+git cherry-pick
+git rebase
+git diff
+git log
+git ignore
+git reset
+git revert
+git clone(only particular branch)
+git push (only particular branch)
+what is pull request in git
