@@ -4,26 +4,26 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
 
 
 ### Prerequisites
-1. EC2 RHEL 7.x Instance [Get help here](https://www.youtube.com/watch?v=KDtS6BzJo3A)
+ EC2 RHEL 7.x Instance [Get help here](https://www.youtube.com/watch?v=KDtS6BzJo3A)
    - With Internet Access
    - Security Group with Port `8080` open for internet
-1. Java v1.8.x 
+ Java v1.8.x 
 
 ## Install Java
 We will be using open java for our demo, Get latest version from http://openjdk.java.net/install/
 ```sh
-yum install java-1.8*
+1) yum install java-1.8*
 
 ```
 
 ### Confirm Java Version
 Lets install java and set the java home
 ```sh
-java -version
-find /usr/lib/jvm/java-1.8* | head -n 3
+2) java -version
+3) find /usr/lib/jvm/java-1.8* | head -n 3
 #JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.191.b12-1.el7_6.x86_64
 # To set it permanently update your .bash_profile
-vi .bash_profile
+5) vi .bash_profile
 Sample Example of .bahs_profile file:
 ====================================
 # .bash_profile
@@ -41,7 +41,7 @@ export PATH
 =========================================================================
 #Restart the .bash_profile to reflect the changes.
 
-source ~/.bash_profile
+6) source ~/.bash_profile
 ```
 _The output should be something like this,_
 ```
@@ -55,19 +55,19 @@ OpenJDK 64-Bit Server VM (build 25.151-b12, mixed mode)
 You can install jenkins using the rpm or by setting up the repo. We will setup the repo so that we can update it easily in future.
 Get latest version of jenkins from https://pkg.jenkins.io/redhat-stable/
 ```sh
-yum -y install wget
-wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
-rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
-yum -y install jenkins
+1) yum -y install wget
+2) wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+3) rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+4) yum -y install jenkins
 ```
 
 ### Start Jenkins
 ```sh
 # Start jenkins service
-systemctl start jenkins
+5) systemctl start jenkins
 
 # Setup Jenkins to start at boot,
-systemctl enable jenkins
+6) systemctl enable jenkins
 ```
 
 #### Accessing Jenkins
