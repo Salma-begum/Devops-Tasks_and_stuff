@@ -1,0 +1,14 @@
+#If you want to change the default port that Jenkins runs on, run:
+1) vi /etc/sysconfig/jenkins
+
+#Find the following line and change the port number you want to use:
+
+2) JENKINS_PORT="8080"
+
+# Change the port number from "8080" to your desired number.
+
+# Save the file and restart jenkins server
+
+3) systemctl restart jenkins
+
+# goto browser and enter Ip:<portno>
