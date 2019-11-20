@@ -1,0 +1,32 @@
+Linux Commands Tasks:
+1) Create a zero byte file(Name it as sample).
+2) Create a directory.
+3) Create a directory(abc),inside abc create directory(z),inside Z create another directory(y).
+4) echo "hello world" and store that in sample file which we created at task1.
+5) give permissions to "sample" file(owner-read and write,user-execute,other,read,write and execute permission)
+6) create a bash script file in "Z" directory created in task3.(Name of script: myscript.sh)
+Sample script:  
+ #!/bin/bash
+ echo "my path cd abc/a/b/c"
+7) give full permissions myscript.sh
+8) create a soft link to myscript.sh
+9) find the file "sample" and capture the output in same file.
+10)create a file"alphabet" and enter a,b,c,d,e,f,g,a,b and save the file.
+11) grep the keyword small a in file alphabet.
+12) grep the keyword capital A in file alphabet.
+13) create a script name "demo.sh".
+Sample script:  
+ #!/bin/bash
+ echo "my demo"
+ sleeep "60"
+14) open one gitbash terminal and check for demo.sh process.
+15) rerun the demo.sh terminal and kill the process from anaother gitbash terminal.
+16) check the user id of pc.
+17) check the username of pc.
+18) check the operating system of pc.
+19) check the free space available of pc.
+20) check the cpu utilization of pc.
+30) create a directory with any name and tar that directory.
+31) now remove the directory and untar the tar file created in step 30.
+32) Execute the below command.
+   history >> mytask
